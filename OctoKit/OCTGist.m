@@ -65,6 +65,11 @@
 	return [NSValueTransformer valueTransformerForName:MTLURLValueTransformerName];
 }
 
++ (instancetype)modelWithDictionary:(NSDictionary *)dictionaryValue error:(NSError **)error {
+	return [super modelWithDictionary:dictionaryValue error:error];
+}
+
+
 @end
 
 @interface OCTGistEdit ()
